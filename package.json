@@ -1,0 +1,23 @@
+{
+  "name": "teacher-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Lee-ArnoldIII",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bulma": "^0.7.4",
+    "cors": "^2.8.5",
+    "create-react-app": "^2.1.8",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10",
+    "pg": "^7.9.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^5.2.0"
+  }
+}
