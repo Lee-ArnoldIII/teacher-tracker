@@ -4,64 +4,96 @@ class ContactForm extends Component {
   render () {
     return (
       <div>
-        <div class='field is-horizontal'>
-          <div class='field-label is-normal'>
-            <label class='label'>Teacher ID #</label>
+        <div>
+          <h1>Parent/Student Contact Log</h1>
+          <p>Please enter the appropriate information in each field below
+                  to ensure accuracy.
+          </p>
+        </div>
+
+        <div className='field is-horizontal'>
+          {/* teacher information */}
+          <div className='field-label is-normal'>
+            <label className='label'>Teacher ID #</label>
           </div>
-          <div class='field-body'>
-            <div class='field'>
-              <p class='control is-expanded has-icons-left'>
-                <input class='input' type='text' placeholder='Name' />
-                <span class='icon is-small is-left'>
-                  <i class='fas fa-user' />
-                </span>
+          <div className='field-body'>
+            <div className='field is-narrow'>
+              <p className='control'>
+                <input className='input' type='text' placeholder='Teacher ID #' />
               </p>
             </div>
-            <div class='field'>
-              <p class='control is-expanded has-icons-left has-icons-right'>
-                <input class='input is-success' type='email' placeholder='Email' value='alex@smith.com' />
-                <span class='icon is-small is-left'>
-                  <i class='fas fa-envelope' />
-                </span>
-                <span class='icon is-small is-right'>
-                  <i class='fas fa-check' />
-                </span>
+            <div className='field'>
+              <p className='control is-expanded'>
+                <input className='input' type='text' placeholder='First Name' />
+              </p>
+            </div>
+            <div className='field'>
+              <p className='control is-expanded'>
+                <input className='input' type='text' placeholder='Last Name' />
               </p>
             </div>
           </div>
         </div>
 
-        <div class='field is-horizontal'>
-          <div class='field-label' />
-          <div class='field-body'>
-            <div class='field is-expanded'>
-              <div class='field has-addons'>
-                <p class='control'>
-                  <a class='button is-static'>
-            +44
-                  </a>
-                </p>
-                <p class='control is-expanded'>
-                  <input class='input' type='tel' placeholder='Your phone number' />
-                </p>
-              </div>
-              <p class='help'>Do not enter the first zero</p>
+        <div className='field is-horizontal'>
+          {/* Student Information */}
+          <div className='field-label is-normal'>
+            <label className='label'>Student ID #</label>
+          </div>
+          <div className='field-body'>
+            <div className='field is-narrow'>
+              <p className='control'>
+                <input className='input' type='text' placeholder='Studen ID #' />
+              </p>
+            </div>
+            <div className='field'>
+              <p className='control is-expanded'>
+                <input className='input' type='text' placeholder='First Name' />
+              </p>
+            </div>
+            <div className='field'>
+              <p className='control is-expanded'>
+                <input className='input' type='text' placeholder='Last Name' />
+              </p>
             </div>
           </div>
         </div>
 
-        <div class='field is-horizontal'>
-          <div class='field-label is-normal'>
-            <label class='label'>Department</label>
+        <div className='field is-horizontal'>
+          {/* Intervention Information */}
+          <div className='field-label is-normal'>
+            <label className='label'>Intervention Type</label>
           </div>
-          <div class='field-body'>
-            <div class='field is-narrow'>
-              <div class='control'>
-                <div class='select is-fullwidth'>
+          <div className='field-body'>
+            <div className='field is-narrow'>
+              <div className='control is-expanded'>
+                <div className='select is-fullwidth'>
                   <select>
-                    <option>Business development</option>
-                    <option>Marketing</option>
-                    <option>Sales</option>
+                    <option>Select one</option>
+                    <option>Grade Conference</option>
+                    <option>Behavior Conference</option>
+                    <option>Parent Contact - phone</option>
+                    <option>Parent Contact - email</option>
+                    <option>Parent Contact - conference</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='field-label is-normal'>
+            <label className='label'>Point of Contact</label>
+          </div>
+          <div className='field-body'>
+            <div className='field is-narrow'>
+              <div className='control is-expanded'>
+                <div className='select is-fullwidth'>
+                  <select>
+                    <option>Select one</option>
+                    <option>Mom</option>
+                    <option>Dad</option>
+                    <option>Guardian</option>
+                    <option>Other</option>
                   </select>
                 </div>
               </div>
@@ -69,70 +101,32 @@ class ContactForm extends Component {
           </div>
         </div>
 
-        <div class='field is-horizontal'>
-          <div class='field-label'>
-            <label class='label'>Already a member?</label>
+        <div className='field is-horizontal'>
+          <div className='field-label is-normal'>
+            <label className='label'>Name of Contact</label>
           </div>
-          <div class='field-body'>
-            <div class='field is-narrow'>
-              <div class='control'>
-                <label class='radio'>
-                  <input type='radio' name='member' />
-          Yes
-                </label>
-                <label class='radio'>
-                  <input type='radio' name='member' />
-          No
-                </label>
+          <div className='field is-narrow'>
+            <p className='control is-expanded'>
+              <input className='input' type='text' placeholder='Name of Contact' />
+            </p>
+          </div>
+          <div className='field-label is-normal'>
+            <label className='label'>Date of Intervention</label>
+          </div>
+          <div className='field-body'>
+            <div className='field is-narrow'>
+              <div className='control is-expanded'>
+                <input className='input' type='text' placeholder='Please enter a date' />
               </div>
             </div>
           </div>
         </div>
 
-        <div class='field is-horizontal'>
-          <div class='field-label is-normal'>
-            <label class='label'>Subject</label>
-          </div>
-          <div class='field-body'>
-            <div class='field'>
-              <div class='control'>
-                <input class='input is-danger' type='text' placeholder='e.g. Partnership opportunity' />
-              </div>
-              <p class='help is-danger'>
-        This field is required
-              </p>
-            </div>
-          </div>
-        </div>
+        <h1>Intervention Notes</h1>
+        <textarea className='textarea' placeholder='e.g. Hello world' />
 
-        <div class='field is-horizontal'>
-          <div class='field-label is-normal'>
-            <label class='label'>Question</label>
-          </div>
-          <div class='field-body'>
-            <div class='field'>
-              <div class='control'>
-                <textarea class='textarea' placeholder='Explain how we can help you' />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class='field is-horizontal'>
-          <div class='field-label'>
-    filler text
-          </div>
-          <div class='field-body'>
-            <div class='field'>
-              <div class='control'>
-                <button class='button is-primary'>
-          Send message
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
+
     )
   }
 }
