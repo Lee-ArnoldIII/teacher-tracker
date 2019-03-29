@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
     "password": null,
-    "database": "teacher-tracker",
+    "database": "teacher_tracker",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },

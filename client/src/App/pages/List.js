@@ -6,7 +6,8 @@ import Bulma from 'bulma'
 class List extends Component {
   constructor (props) {
     super(props)
-
+    this.getList()
+    
     this.state = {
       list: []
     }
