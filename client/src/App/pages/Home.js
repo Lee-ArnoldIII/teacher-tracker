@@ -17,7 +17,7 @@ class Home extends Component {
               </h2>
             </div>
             <Link to={'./list'}>
-              <a className='button is-link is-medium'>ENTER</a>
+              <a className='button is-link is-large'>ENTER</a>
             </Link>
           </div>
         </section>

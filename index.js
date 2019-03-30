@@ -15,14 +15,20 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.get('/api/getList', (req, res) => {
-//   db.teacher_tracker.findAll()
-//     .then(result => {
-//       console.log(result.data.Values)
-//       res.json(result.dataValues)
-//     })
-  var list = ['item1', 'item2', 'item3', 'foo', 'cherry']
-  res.json(list)
-  console.log('Here is the list')
+  // console.log(db.log2)
+  // res.send(db.log2)
+  // console.log('this is a test of the db info')
+  db.log2.findAll()
+    .then(result => {
+      console.log(result)
+      res.json(result)
+    })
+    .catch((error) => {
+      console.log(error)
+    })
+  // var list = ['item1', 'item2', 'item3', 'foo', 'cherry']
+  // res.json(list)
+  // console.log('Here is the list')
 })
 
 app.get('*', (req, res) => {
@@ -37,7 +43,7 @@ app.post('/api/updateForm', (req, res) => {
     student_fname: req.body.data.studentFName,
     intervention_type: req.body.data.interventionType,
     intervention_date: req.body.data.dateOfIntervention,
-    follow_up_date: req.body.data.followupDate,
+    follow_up_date: req.body.data.followUpDate,
     notes: req.body.data.notes,
     point_of_contact: req.body.data.pointOfContact,
     teacher_lname: req.body.data.teacherLName,

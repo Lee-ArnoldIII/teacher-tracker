@@ -52,6 +52,7 @@ class ContactForm extends Component {
       .then(res => {
           console.log(res)
           alert('Form updated succesfully')
+          this.props.history.push('/list')
       })
       this.setState ({
         teacherID: '',
