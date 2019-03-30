@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Bulma from 'bulma'
 
+import FollowUp from '../components/FollowUp'
+import Table from '../containers/Table';
+import Navbar from '../components/Navbar'
+
 class List extends Component {
   constructor (props) {
     super(props)
@@ -37,7 +41,36 @@ sendInfo = (data, id) => {
 
     return (
       <div className='App'>
-        <h1>List of Items</h1>
+        <div id='nav'>
+          <Navbar />
+        </div>
+        <div id='header'>
+        <section className="hero is-primary">
+        <div className="hero-body">
+        <div className="container">
+        <h1 className="title">Welcome to the Dashboard</h1>
+       </div>
+      </div>
+    </section>
+    </div>
+    <br />
+    <div className='container is-fluid' id='leftblock'>
+      <FollowUp />
+      <div className='section'>
+        <div className='level'>
+          <p className='level-item'>
+            Click the create button to create a new contact form submission
+          </p>
+        
+          <div className='level-left level-item'>
+           <Link to={'./ContactForm'}>
+              <a className='button is-link is-normal'>Contact Form</a>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+
         {/* {list.length ? (
           <div>
             {list.map((item) => {
@@ -54,16 +87,13 @@ sendInfo = (data, id) => {
           </div>
         )
         } */}
-        {list.email}
+        {/* {list.email}
         <input onChange={(e) => this.setState({ blah: e.target.value })} />
-        <button onClick={this.handleClick}> submit</button>
+        <button onClick={this.handleClick}> submit</button> */}
         <br />
         <br />
-        <div>
-        <Link to={'./ContactForm'}>
-              <a className='button is-link is-small'>Contact Form</a>
-            </Link>
-        </div>
+        
+        <Table />
       </div>
     )
   }

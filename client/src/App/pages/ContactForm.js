@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import DatePicker from "react-datepicker";
+
+import Navbar from '../components/Navbar'
  
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -71,6 +73,7 @@ class ContactForm extends Component {
   render () {
     return (
       <div>
+        <Navbar />
         <div>
           <h1>Parent/Student Contact Log</h1>
           <p>Please enter the appropriate information in each field below
