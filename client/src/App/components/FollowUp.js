@@ -10,7 +10,7 @@ class FollowUp extends Component {
               <div class='tile is-8 is-parent '>
                 <article class='tile is-child notification is-primary'>
                   <p class='title'>Today's Follow-Ups:</p>
-                  <p class='subtitle'>Put List Here</p>
+                  <p class='subtitle'>No Follow-ups Today</p>
                 </article>
               </div>
             </div>

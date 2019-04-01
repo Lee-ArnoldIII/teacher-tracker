@@ -74,7 +74,6 @@ class ContactForm extends Component {
   render () {
     return (
       <div>
-        <Navbar />
         <div>
           <h1>Parent/Student Contact Log</h1>
           <p>Please enter the appropriate information in each field below
