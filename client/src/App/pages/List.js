@@ -11,9 +11,6 @@ class List extends Component {
   render () {
     return (
       <div className='App'>
-        <div id='nav'>
-          <Navbar />
-        </div>
         <div id='header'>
           <section className='hero is-primary'>
             <div className='hero-body'>
@@ -34,7 +31,7 @@ class List extends Component {
 
               <div className='level-left level-item'>
                 <Link to={'./ContactForm'}>
-                  <a className='button is-link is-normal'>Contact Form</a>
+                  <a className='button is-link is-normal'>Create New Submission</a>
                 </Link>
               </div>
             </div>
