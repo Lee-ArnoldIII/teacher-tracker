@@ -81,6 +81,7 @@ class ContactForm extends Component {
           </p>
         </div>
 
+
         <div className='field is-horizontal'>
           {/* teacher information */}
           <div className='field-label is-normal'>
@@ -104,6 +105,7 @@ class ContactForm extends Component {
             </div>
           </div>
         </div>
+<br />
 
         <div className='field is-horizontal'>
           {/* Student Information */}
@@ -131,6 +133,7 @@ class ContactForm extends Component {
 
         <div className='field is-horizontal'>
           {/* Intervention Information */}
+          <div className='control'></div>
           <div className='field-label is-normal'>
             <label className='label'>Intervention Type</label>
           </div>

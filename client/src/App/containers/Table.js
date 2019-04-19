@@ -39,7 +39,6 @@ class Table extends Component {
                 <th>Type of Intervention</th>
                 <th>Person Contacted</th>
                 <th>Notes from Intervention</th>
-                <th>Scheduled Follow-Up Date</th>
               </tr>
             </thead>
 
@@ -48,13 +47,12 @@ class Table extends Component {
                 list.map((item) => (
                   <React.Fragment>
                     <tr>
-                      <th>{item.student_id}</th>
-                      <th>{item.student_fname}  {item.student_lname}</th>
-                      <th>{item.teacher_fname}  {item.teacher_lname}</th>
-                      <th>{item.intervention_type}</th>
-                      <th>{item.point_of_contact}</th>
-                      <th>{item.notes}</th>
-                      <th>{item.follow_up_date}</th>
+                      <td>{item.student_id}</td>
+                      <td>{item.student_fname}  {item.student_lname}</td>
+                      <td>{item.teacher_fname}  {item.teacher_lname}</td>
+                      <td>{item.intervention_type}</td>
+                      <td>{item.point_of_contact}</td>
+                      <td>{item.notes}</td>
                     </tr>
                   </React.Fragment>
 

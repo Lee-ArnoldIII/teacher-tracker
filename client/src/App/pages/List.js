@@ -12,7 +12,7 @@ class List extends Component {
     return (
       <div className='App'>
         <div id='header'>
-          <section className='hero is-primary'>
+          <section className='hero has-text-grey-lighter'>
             <div className='hero-body'>
               <div className='container'>
                 <h1 className='title'>Welcome to the Dashboard</h1>
@@ -31,7 +31,7 @@ class List extends Component {
 
               <div className='level-left level-item'>
                 <Link to={'./ContactForm'}>
-                  <a className='button is-link is-normal'>Create New Submission</a>
+                  <a className='button is-primary is-outlined is-large'>Create</a>
                 </Link>
               </div>
             </div>
