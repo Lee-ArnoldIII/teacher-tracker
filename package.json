@@ -16,11 +16,11 @@
   "author": "Lee-ArnoldIII",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.20.1",
     "bulma": "^0.7.4",
     "cors": "^2.8.5",
     "create-react-app": "^3.0.0",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "nodemon": "^1.18.10",
     "pg": "^7.9.0",
     "pg-hstore": "^2.3.2",
